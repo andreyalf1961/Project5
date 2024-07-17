@@ -4,15 +4,16 @@ class House:
         self.number_of_floors = number_of_floors
 
     def __len__(self):
-        print(self.number_of_floors)
+        return self.number_of_floors
 
     def __str__(self):
-        print(f'Название: {self.name}, кол-во этажей: {self.number_of_floors}')
+        return (f'Название: {self.name}, кол-во этажей: {self.number_of_floors}')
 
 
 h1 = House('ЖК Эльбрус', 30)
 h2 = House("ЖК Пётр Великий", 2)
-h1.__str__()
-h2.__str__()
-h1.__len__()
-h2.__len__()
+
+print(h1)
+print(h2)
+print(len(h1))
+print(len(h2))
